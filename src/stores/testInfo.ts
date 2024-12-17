@@ -26,16 +26,17 @@ export const useTestInfoStore = defineStore('testInfo', () => {
   const totalAgreed = ref(0)
   const questionIndex = ref(0)
   const choosedOption = ref<string | null>(null)
+  const totalTime = ref('00:00:00:00')
 
   const testIsStart = ref(false)
   const testIsStop = ref(false)
 
   const currentQuestion = computed(() => questionsData.value[questionIndex.value])
+  
   const progress = computed(() => {
     return Math.round((answeredAmount.value / wordAmount.value) * 100)
   })
   const accuracy = computed(() => {
-    console.log(accuracy)
     return Math.round(((wordAmount.value - totalFailed.value) / wordAmount.value) * 100)
   })
 
@@ -50,6 +51,7 @@ export const useTestInfoStore = defineStore('testInfo', () => {
     testIsStop,
     currentQuestion,
     progress,
-    accuracy
+    accuracy,
+    totalTime
   }
 })

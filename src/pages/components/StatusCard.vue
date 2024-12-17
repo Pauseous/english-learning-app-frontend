@@ -3,15 +3,10 @@ import { ref } from 'vue'
 import { useTestInfoStore } from '../../stores/testInfo'
 import { storeToRefs } from 'pinia'
 
-const count = ref(0)
-const { testIsStart, progress, accuracy } = storeToRefs(useTestInfoStore())
+const { testIsStart, progress, accuracy, totalTime } = storeToRefs(useTestInfoStore())
 const { wordAmount } = useTestInfoStore()
 
-// const wordAmount = defineModel("wordAmount", { type: Number })
-// const props = defineProps(['testIsStart', 'progress', 'accuracy'])
-
 const amountDropmenuIsShow = ref(false)
-const totalTime = ref('00:00:00:000')
 let startTime = null
 let stopTime = null
 let totalPauseTime = 0
@@ -61,15 +56,10 @@ function resetTimer() {
   totalTime.value = '00:00:00:000'
 }
 
-function getTimerText() {
-  return totalTime.value
-}
-
 defineExpose({
   startTimer,
   stopTimer,
-  resetTimer,
-  getTimerText
+  resetTimer
 });
 
 </script>
