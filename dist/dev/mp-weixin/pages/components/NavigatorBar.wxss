@@ -1,0 +1,34 @@
+
+.nav-container.data-v-b64a64df {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 10px 20px;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+}
+.nav-item.data-v-b64a64df {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+.nav-icon.data-v-b64a64df {
+  width: 24px;
+  height: 24px;
+}
+.nav-text.data-v-b64a64df {
+  font-size: 12px;
+  margin-top: 4px;
+}
+.hide.data-v-b64a64df {
+  display: none;
+}
+.gray-text.data-v-b64a64df {
+  color: #bfbfbf;
+}

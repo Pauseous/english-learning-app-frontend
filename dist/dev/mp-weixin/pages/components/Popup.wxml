@@ -1,0 +1,1 @@
+<view id="popup" class="{{['popup', 'data-v-81573b6c', b && 'pop']}}" bindtap="{{c}}"><view class="popup-content data-v-81573b6c"><view wx:for="{{a}}" wx:for-item="content" wx:key="b" class="info data-v-81573b6c"><view class="info data-v-81573b6c">{{content.a}}</view></view></view></view>

@@ -1,0 +1,10 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "uni-app",
+  "usingComponents": {
+    "topbar-placeholder": "../components/TopbarPlaceholder",
+    "status-card": "../components/StatusCard",
+    "navigator-bar": "../components/NavigatorBar",
+    "popup": "../components/Popup"
+  }
+}
