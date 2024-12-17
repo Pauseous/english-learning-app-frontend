@@ -1,1 +1,0 @@
-<view class="top-placeholder" style="{{'height:' + a + ';' + ('padding-bottom:' + b)}}"></view>
