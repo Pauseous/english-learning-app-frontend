@@ -71,7 +71,6 @@ function endTest() {
   totalFailed.value = 0
   totalAgreed.value = 0
   choosedOption.value = null
-  // statusCard.value.resetTimer()
   emit('endTest')
 }
 
@@ -88,7 +87,7 @@ function endTest() {
     <view class="option-list">
       <view
         class="option-item"
-        v-for="(item, index) in currentQuestion.options" :key="index"
+        v-for="(item, index) in currentQuestion.options.split(',')" :key="index"
       >
         <a
           class="option-button"

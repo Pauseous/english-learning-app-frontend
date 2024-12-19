@@ -3,8 +3,7 @@ import { ref } from 'vue'
 import { useTestInfoStore } from '../../stores/testInfo'
 import { storeToRefs } from 'pinia'
 
-const { testIsStart, progress, accuracy, totalTime } = storeToRefs(useTestInfoStore())
-const { wordAmount } = useTestInfoStore()
+const { testIsStart, progress, accuracy, totalTime, wordAmount } = storeToRefs(useTestInfoStore())
 
 const amountDropmenuIsShow = ref(false)
 let startTime = null
